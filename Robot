@@ -1,5 +1,5 @@
-package BroderJohn;
-import robocode.*;
+package broderjohn;
+import robocode.ID;
 
 
 /**
@@ -7,13 +7,13 @@ import robocode.*;
  */
 public class Spinnerabi extends JuniorRobot
 {
-	ault behavior
+	ault behavior;
 	
-	public void run() {
+	public void run()
 	
 
 		setColors(black, black, black, black, black);
-			public void top left corner{
+			public void topleftcorner(){
 		int heightdistance;
 		int widthdistance;
 		heightdistance = fieldHeight - robotY;
@@ -22,16 +22,16 @@ public class Spinnerabi extends JuniorRobot
 		ahead(heightdistance);
 		turnTo(90);
 		back(widthdistance);
+          }
 		// Robot main loop
 		while(true) {
-			// Replace the next 4 lines with any behavior you would like
+		
 			turnBackRight(120,70);
 			turnGunRight(50);
 			turnBackRight(120,70);
 			turnGunRight(360);
 		}
-	}
-	}
+	
 
 	public void onScannedRobot() {
 	
@@ -41,13 +41,12 @@ public class Spinnerabi extends JuniorRobot
 	
 		turnGunTo(scannedAngle + scannedVelocity/2);
 //if robot is under 100 blocks away robot fires 1
-		if scannedDistance > 100) {
-		   fire (2);}
-		if(scannedDistance < 100){
+		if( scannedDistance > 100) 
+		   fire (2);
+		if(scannedDistance < 100)
 			fire(1);
 		}
-	}
-
+	
 
 	public void onHitByBullet() {
 
@@ -61,4 +60,3 @@ public class Spinnerabi extends JuniorRobot
 		back(0);
 	}	
 }
-      
