@@ -13,8 +13,8 @@ public class Spinnerabi extends JuniorRobot
 	
 
 		setColors(black, black, black, black, black);
-		//Robot goes in the top left corner
-int heightdistance;
+			public void top left corner{
+		int heightdistance;
 		int widthdistance;
 		heightdistance = fieldHeight - robotY;
 		widthdistance = fieldWidth - robotX;
@@ -30,6 +30,7 @@ int heightdistance;
 			turnBackRight(120,70);
 			turnGunRight(360);
 		}
+	}
 	}
 
 	public void onScannedRobot() {
